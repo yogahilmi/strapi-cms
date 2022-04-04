@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_activities",
+  "info": {
+    "singularName": "event-activity",
+    "pluralName": "event-activities",
+    "displayName": "Event Activities",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "maxLength": 30,
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "video",
+        "url"
+      ],
+      "required": true
+    },
+    "image_url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}

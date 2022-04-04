@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "live_performances",
+  "info": {
+    "singularName": "live-performance",
+    "pluralName": "live-performances",
+    "displayName": "Live Performances"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "started_at": {
+      "type": "datetime"
+    },
+    "ended_at": {
+      "type": "datetime",
+      "required": true
+    },
+    "image_url": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "video_url": {
+      "type": "string",
+      "required": false,
+      "maxLength": 255
+    },
+    "embed_url": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

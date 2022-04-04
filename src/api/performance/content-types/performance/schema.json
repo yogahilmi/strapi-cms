@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "performances",
+  "info": {
+    "singularName": "performance",
+    "pluralName": "performances",
+    "displayName": "Performances",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stage_id": {
+      "type": "biginteger",
+      "required": true,
+      "max": "20"
+    },
+    "organizer_id": {
+      "type": "biginteger",
+      "required": true,
+      "max": "20"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "image_url": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "video_url": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "embed_url": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
+}

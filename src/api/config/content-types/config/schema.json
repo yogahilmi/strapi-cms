@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "configs",
+  "info": {
+    "singularName": "config",
+    "pluralName": "configs",
+    "displayName": "Configs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start_event": {
+      "type": "date",
+      "required": true
+    },
+    "end_events": {
+      "type": "date",
+      "required": true
+    },
+    "digibanner_mobile_image_url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "digibanner_desktop_image_url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "digibanner_url": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    }
+  }
+}
